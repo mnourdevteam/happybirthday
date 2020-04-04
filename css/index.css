@@ -1,0 +1,7 @@
+body {
+    --background: #fffff4;
+    background-color:var(--background) ;
+}
+.video {
+    width: 100%;
+}
