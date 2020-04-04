@@ -1,9 +1,11 @@
 function check(code) {
     if (code === 'BnzumW0zV') {
-        console.log('PERFECT');
+        window.open('https://www.disneyplus.com/es-419/login','_blank');
         return;
     }
-    console.log('SHIT');
+   $('#shit').modal({
+        keyboard: false
+    })
 }
 
 function getInputValue() {
