@@ -1,7 +1,87 @@
-body {
-    --background: #fffff4;
-    background-color:var(--background) ;
+@font-face {
+    font-family: kavinar;
+    src: url('../assets/fonts/Kavivanar/kavinar.ttf') format('truetype');
 }
+
+@font-face {
+    font-family: lato;
+    src: url('../assets/fonts/Lato/Lato.ttf') format('truetype');
+}
+
+body {
+    --kavinar: kavinar, Serif;
+    --lato: lato, sans-serif;
+    --background: #fffff4;
+    --disney: #113CCF;
+    background-color: var(--background);
+    font-family: var(--lato);
+    min-height: 100vh;
+}
+
+.container {
+    height: 100vh;
+}
+
+.container > div {
+    height: 100%;
+    top: 0;
+}
+
 .video {
     width: 100%;
+}
+
+.intro__text .intro__text-title {
+    font-family: var(--kavinar);
+}
+
+.intro__text .intro__text-subtitle {
+    font-family: var(--lato);
+    font-size: 1.125rem;
+    font-weight: normal;
+    line-height: 1.35;
+}
+
+.btn-primary {
+    background-color: var(--disney);
+    border: 0;
+    transition: transform .4s ease-in-out;
+    text-transform: uppercase;
+}
+
+.btn-primary:hover {
+    transform: scale(1.15);
+}
+
+.form-control:focus {
+    box-shadow: none;
+}
+
+img {
+    display: block;
+}
+
+.modal-content {
+    background-color: #5a5a96;
+    color: white;
+    border: 0;
+}
+.modal-header {
+    border: 0;
+}
+.modal-footer {
+    border: 0;
+}
+.close {
+    color:white;
+    opacity: 1;
+}
+.pluto {
+    position: relative;
+    z-index: -1;
+}
+@media only screen and (min-width: 768px) {
+    .content-gift {
+        position: absolute;
+    }
 }
